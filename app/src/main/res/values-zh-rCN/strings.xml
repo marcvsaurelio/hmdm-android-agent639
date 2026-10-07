@@ -1,0 +1,132 @@
+<!--
+  ~ Headwind MDM: Open Source Android MDM Software
+  ~ https://h-mdm.com
+  ~
+  ~ Copyright (C) 2019 Headwind Solutions LLC (http://h-sms.com)
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+	<string name="admin_title">管理员</string>
+	<string name="install_error">安装错误</string>
+	<string name="file_create_error">创建文件错误</string>
+	<string name="dialog_enter_device_id_error">该ID未在%s处註册。从控制面板的“设备”标籤中获取ID。</string>
+	<string name="dialog_enter_device_id_qrcode">二维码</string>
+	<string name="dialog_enter_device_id_variants">变体</string>
+	<string name="dialog_enter_device_id_save">储存</string>
+	<string name="dialog_enter_device_id_exit">退出</string>
+	<string name="dialog_enter_device_id_title">在%s输入设备ID</string>
+	<string name="main_start_preparations">準备开始</string>
+	<string name="main_downloading_configuration">更新配置文件</string>
+	<string name="main_downloading_content">更新数据</string>
+	<string name="main_update_applications">安装和更新应用程序</string>
+	<string name="dialog_root_message">您需要ROOT权限</string>
+	<string name="main_application_start">开始申请</string>
+	<string name="main_app_installing">安装应用程序</string>
+	<string name="main_app_downloading">下载申请书</string>
+	<string name="main_app_downloading_error">无法下载软件包</string>
+	<string name="main_app_removing">卸载应用程序</string>
+	<string name="main_file_downloading">下载文件</string>
+	<string name="main_file_downloading_error">下载文件失败</string>
+	<string name="main_activity_repeat">重试</string>
+	<string name="main_activity_reset">重启</string>
+	<string name="main_activity_wifi">WiFi</string>
+	<string name="main_activity_cancel">取消</string>
+	<string name="main_activity_details">细节</string>
+	<string name="select_system_launcher">选择%s作为默认启动器，然後选中“始终”：</string>
+	<string name="dialog_network_error_title">连接到%s时出错。请检查互联网连接，然後重试。</string>
+	<string name="main_activity_update_config">从服务器请求配置文件</string>
+	<string name="main_activity_applications_update">更新应用程序</string>
+	<string name="dialog_overlay_settings_title">请允许应用程序在其他窗口上绘制。\n\n此选项有助于更好地阻止不需要的应用程序，并启用自助服务终端模式的紧急解锁。\n\n点按“继续”以打开设置表。 找到 \"%s\" 项目，授予权限，然后点击 \"Back\"。</string>
+	<string name="dialog_manage_storage_title">请允许该应用管理存储。\n\n此选项允许 Headwind MDM 管理您设备上的文件。</string>
+	<string name="dialog_history_settings_title">请允许该应用访问使用数据。\n\n此选项启用对应用程序和设置的控制。\n\n此选项可能会导致更快的电池消耗。 要节省电池电量，请跳过此选项（改用无障碍服务或信息亭模式）。\n\n点按“继续”以打开设置表。 找到 \"%s\" 项目，授予权限，然后点击 \"Back\"。</string>
+	<string name="dialog_history_settings_continue">继续</string>
+	<string name="dialog_history_settings_skip">跳下一步</string>
+	<string name="dialog_unknown_sources_title">请允许从未知来源进行安装。现在将打开一个设置表。找到“未知来源”，允许安装，然後单击“上一步”。</string>
+	<string name="dialog_unknown_sources_continue">继续</string>
+	<string name="dialog_miui_permissions_title">MIUI要求手动设置自定义权限。现在将打开“应用程序权限”窗口。轻按\"其他权限\"，允许\"在後台运行时显示弹出窗口\"，然後单击\"返回\"。</string>
+	<string name="dialog_miui_developer_title">MIUI需要手动设置设备。在信息屏幕上，点击TAP 7 TIMES \" BUILD NUMBER \"。这将启用开发人员设置。</string>
+	<string name="dialog_miui_optimization_title">MIUI需要手动设置设备。开发人员设置窗口现在将打开。向下滚动屏幕，然後取消选中“ MIUI优化”。</string>
+	<string name="dialog_administrator_mode_message">请允许该应用在设备管理员模式下运行。现在将打开一个设置表。选择\"设备管理员\"，找到\"%s\"项目，激活（Activate）管理员，然後点击\"返回\"。</string>
+	<string name="dialog_administrator_mode_continue">继续</string>
+	<string name="dialog_administrator_mode_skip">跳跃</string>
+	<string name="accessibility_service_description">通过MDM应用程序进行活动的应用程序监视</string>
+	<string name="dialog_accessibility_service_message">请允许该应用使用辅助功能。现在将打开一个设置表。找到\"%s\"项，允许使用辅助功能，然後点击\" Back \"。</string>
+	<string name="dialog_accessibility_service_continue">继续</string>
+	<string name="dialog_accessibility_service_skip">跳下一步</string>
+	<string name="access_to_app_denied">不允许使用以下包裹：</string>
+	<string name="access_to_app_denied_2">请请求管理员在配置中启用此程序包。\n\n单击“关闭”或“主页”按钮继续。</string>
+	<string name="package_id_copied">包 ID 已复制到剪贴板</string>
+	<string name="dialog_app_not_allowed_close">关闭</string>
+	<string name="dialog_app_not_allowed_admin">管理员</string>
+	<string name="device_id">设备编号</string>
+	<string name="imei">IMEI</string>
+	<string name="serial_number">序列号</string>
+	<string name="phone_number">电话号码</string>
+	<string name="launcher_version">启动器版本</string>
+	<string name="close">关闭</string>
+	<string name="admin_change_device_id">更改设备ID</string>
+	<string name="admin_change_server_url">更改服务器URL</string>
+	<string name="admin_allow_settings">打开设置</string>
+	<string name="settings_allowed">您可以在3分钟内更改设置。</string>
+	<string name="admin_clear_restrictions">移除限制</string>
+	<string name="permissive_mode_enabled">您可以在 3 分钟内运行所有应用程序。</string>
+	<string name="admin_refresh">更新配置</string>
+	<string name="admin_exit">退出系统启动器</string>
+	<string name="admin_reset_permissions">检查权限</string>
+	<string name="admin_reset_network">重置网络策略</string>
+	<string name="admin_reset_network_hint">清除网络策略。现在，您可以启用网络并重新加载配置。</string>
+	<string name="reboot">重启设备</string>
+	<string name="reboot_failed">没有足够的权限来重新启动设备。</string>
+	<string name="message_turn_on_gps">设置屏幕将打开。请在此屏幕上打开GPS位置，然後单击返回。</string>
+	<string name="message_turn_off_gps">设置屏幕将打开。请在此屏幕上关闭GPS位置，然後单击返回。</string>
+	<string name="message_turn_on_mobile_data">移动数据已禁用！请打开状态栏，然後打开移动数据。</string>
+	<string name="message_turn_off_mobile_data">启用了移动数据。请打开状态栏，然後关闭移动数据。</string>
+	<string name="message_set_password">您的密码质量不够好。设置屏幕将打开。请更改密码，然後单击“上一步”。</string>
+	<string name="switch_off_blockings">关闭限制...</string>
+	<string name="kiosk_mode_requires_overlays">单一模式已禁用：没有权限绘製其他窗口。请允许%s在其他窗口上绘製。</string>
+	<string name="enter_admin_password">输入管理员密码</string>
+	<string name="wrong_password">密码错误</string>
+	<string name="dialog_enter_password_login">登录</string>
+	<string name="dialog_enter_password_cancel">取消</string>
+	<string name="internal_error">该应用程序遇到内部错误。请重新启动设备，然後重试该操作。</string>
+	<string name="empty_configuration">未设置配置，请尝试从服务器获取！</string>
+	<string name="permissions_reset_hint">关闭管理面板以检查并请求权限。</string>
+	<string name="dialog_enter_server_error">请输入有效的服务器URL。</string>
+	<string name="dialog_enter_server_ok">OK</string>
+	<string name="dialog_enter_server_title">请输入服务器网址</string>
+	<string name="critical_server_failure">由於服务器故障而退出！请解决此问题，然後重新启动%s，或将其完全删除并重新安装。</string>
+	<string name="dialog_permission_title">该应用需要权限才能运行。请授予请求的权限。</string>
+	<string name="main_activity_exit">退出</string>
+	<string name="browser_not_found">由於找不到浏览器，因此无法打开网页。请在设备配置中添加浏览器应用。</string>
+	<string name="invalid_web_link">无法打开 Web 链接，因为它的格式不正确。 有关详细信息，请联系您的管理员。</string>
+	<string name="activity_not_found">无法执行操作 %s，因为未找到该活动。</string>
+	<string name="location_service_text">设备位置受到监控</string>
+	<string name="qrcode_contents_error">无效的QR码内容。请在%s Web面板中生成预配置QR码。</string>
+	<string name="device_locked">此设备 (%s) 已被管理员锁定。</string>
+	<string name="fault_loop_detected">启动器发生了无法恢复的故障！请与系统管理员联繫。</string>
+	<string name="mqtt_service_text">推送通知处于活动状态</string>
+	<string name="background_location">%s 需要后台位置权限。 单击\'继续\' 打开权限，单击\'位置\' 并允许始终确定位置。</string>
+	<string name="location_disable">禁用位置</string>
+	<string name="background_location_continue">继续</string>
+	<string name="initializing_mdm">正在初始化移动设备管理应用程序...</string>
+	<string name="dialog_server_error_title">MDM 服务器 %s 返回无效响应。 请联系您的管理员。</string>
+	<string name="mdm_choice_message">此设备将由您的组织完全管理。 您的数据不会是私密的，您的 IT 管理员可以随时删除或查看您的数据。</string>
+	<string name="work_profile_message">此设备将获得属于您的组织的受管理工作配置文件。 工作资料与您的私人资料分开，您可以随时在资料之间切换。</string>
+	<string name="overlays_not_supported">不幸的是，您的设备不支持覆盖。</string>
+	<string name="admin_not_supported">您的设备没有设备管理员选项。 单击跳过以继续。</string>
+	<string name="manage_storage_not_supported">您的设备没有管理外部存储的选项。</string>
+    <string name="certificate_install_failed">安装证书 %1$s 失败：%2$s</string>
+    <string name="reboot_required">要完成配置，需要重启设备。</string>
+</resources>
