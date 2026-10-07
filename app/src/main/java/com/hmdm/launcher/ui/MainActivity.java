@@ -994,10 +994,20 @@ public class MainActivity
             }
         }
 
-        if (settingsHelper != null && settingsHelper.getConfig() != null && settingsHelper.getConfig().getLockStatusBar() != null && settingsHelper.getConfig().getLockStatusBar()) {
-            // If the admin requested status bar lock (may be required for some early Samsung devices), block the status bar and right bar (App list) expansion
-            statusBarView = ProUtils.preventStatusBarExpansion(this);
-            rightToolbarView = ProUtils.preventApplicationsList(this);
+        if (settingsHelper != null &&
+                settingsHelper.getConfig() != null &&
+                settingsHelper.getConfig().getLockStatusBar() != null) {
+
+            boolean lockStatusBar = settingsHelper.getConfig().getLockStatusBar();
+
+            if (lockStatusBar) {
+                // blockstatusbar = true
+                statusBarView = ProUtils.preventStatusBarExpansion(this);
+                rightToolbarView = ProUtils.preventApplicationsList(this);
+            } else {
+                // blockstatusbar = false
+                ProUtils.allowStatusBarExpansion(this);
+            }
         }
 
         createApplicationNotAllowedScreen();

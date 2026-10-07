@@ -20,11 +20,15 @@
 package com.hmdm.launcher.pro;
 
 import android.app.Activity;
+import android.app.admin.DevicePolicyManager;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.location.Location;
+import android.util.Log;
 import android.view.View;
 
+import com.hmdm.launcher.AdminReceiver;
 import com.hmdm.launcher.R;
 import com.hmdm.launcher.json.ServerConfig;
 
@@ -96,6 +100,30 @@ public class ProUtils {
         }
 
         return null;
+    }
+    public static void allowStatusBarExpansion(Activity activity) {
+        try {
+            DevicePolicyManager dpm =
+                    (DevicePolicyManager) activity.getSystemService(Context.DEVICE_POLICY_SERVICE);
+
+            ComponentName admin =
+                    new ComponentName(activity, AdminReceiver.class);
+
+            if (dpm != null && dpm.isDeviceOwnerApp(activity.getPackageName())) {
+                dpm.setStatusBarDisabled(admin, false);
+
+                Log.i(
+                        "HeadwindMDM",
+                        "Status bar enabled by DevicePolicyManager"
+                );
+            }
+        } catch (Exception e) {
+            Log.e(
+                    "HeadwindMDM",
+                    "Failed to enable status bar",
+                    e
+            );
+        }
     }
 
     // Add a transparent view on top of a swipeable area at the right (opens app list on Samsung tablets)
