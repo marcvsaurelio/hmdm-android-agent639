@@ -66,7 +66,35 @@ public class ProUtils {
 
     // Add a transparent view on top of the status bar which prevents user interaction with the status bar
     public static View preventStatusBarExpansion(Activity activity) {
-        // Stub
+        try {
+            DevicePolicyManager dpm =
+                    (DevicePolicyManager) activity.getSystemService(Context.DEVICE_POLICY_SERVICE);
+
+            ComponentName admin =
+                    new ComponentName(activity, AdminReceiver.class);
+
+            if (dpm != null && dpm.isDeviceOwnerApp(activity.getPackageName())) {
+                dpm.setStatusBarDisabled(admin, true);
+
+                Log.i(
+                        "HeadwindMDM",
+                        "Status bar disabled by DevicePolicyManager"
+                );
+            } else {
+                Log.w(
+                        "HeadwindMDM",
+                        "Status bar not disabled: app is not Device Owner"
+                );
+            }
+
+        } catch (Exception e) {
+            Log.e(
+                    "HeadwindMDM",
+                    "Failed to disable status bar",
+                    e
+            );
+        }
+
         return null;
     }
 
